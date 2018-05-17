@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Angular Expressions</title>
+	<script src="scripts/angular.js"></script>
+	</head>
+	<body>
+		<form id="form1">
+			<div ng-app="">
+				<table class="auto-style1">
+					<tr>
+						<td class="auto-style2">First Name</td>
+						<td>
+							<input type="text" ng-model="FirstName"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="auto-style2">Last Name</td>
+						<td>
+							<input id="text2" type="text" ng-model="LastName"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="auto-style2">Quantity</td>
+						<td>
+							<input id="text3" type="text" ng-model="Quantity"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="auto-style2">Cost</td>
+						<td>
+							<input id="text4" type="text" ng-model="Cost" value="50"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="auto-style2">
+							<input type="button" value="Click Here"
+								ng-click="message=FirstName+' '+LastName+' '+'hast to pay '+ Cost*Quantity"/>
+						</td>
+						<td>
+							{{message}}
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</body>
+</html>

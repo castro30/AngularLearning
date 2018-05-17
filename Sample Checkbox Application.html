@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Angular Demo</title>
+	<script src="scripts/angular.js"></script>
+	</head>
+	<body>
+		<h1>Sample Checkbox Application</h1>	
+		<div ng-app="">
+			<table border="0">
+				<tr>
+					<td><input type="checkbox" ng-model="enableDisableButton">Disable button</td>
+					<td><button ng-disabled="enableDisableBtton">Click Me!</button></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" ng-model="showHide1">Show Button</td>
+					<td><button ng-enabled="showHide1">Click Me!</button></td>
+				</tr>
+				<tr>
+					<td><p>Total click: {{clickCounter}}</p></td>
+					<td><button ng-click="clickCounter=clickCounter+1">Click Me!</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
